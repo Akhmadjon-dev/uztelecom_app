@@ -1,0 +1,187 @@
+.dashboard-container{
+    margin: 20px 10px;
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+/* .select-region{
+    width: 100%;
+    height: 80px;
+    margin: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+} */
+.select-group{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: #fff;
+    border-radius: 30px;
+}
+.input-container{
+    width:35%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #F6F7F9;
+    border-radius: 20px;
+    height: 50px;
+    align-items: center;
+}
+.select-input{
+    min-width: 200px !important;
+}
+.input-container p{
+    color: #576690;
+}
+.input-container option[value]{
+    color: #2746C5;
+}
+.input-container .select-input{
+    /* min-width: 150px !important; */
+    border-radius: 20px;
+}
+.input-container .ant-select-selector{
+    border-radius: 20px !important;
+}
+
+.recharts-wrapper, .recharts-surface{
+    max-width: 100% !important;
+    
+
+}
+.site-card-wrapper{
+    margin: 30px 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px !important;
+}
+.card{
+    width: calc((100% - 60px)/4);
+    height: 150px;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 20px;
+    margin: 0px 10px;
+}
+.card:first-child{
+    margin-left: 0px;
+}
+.card:last-child{
+    margin-right: 0;
+}
+.card-text{ 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 70%;
+    text-align: left !important;
+}
+.card-text h3{
+    font-size: 36px;
+    font-weight: bold;
+}
+.card-icon{
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(221, 133, 70, 0.322);
+    border-radius: 30px;
+    text-align: center;
+}
+.card-icon-item{
+    width: 100%;
+    color: chocolate;
+}
+.period-btn-group{
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    padding-left: 4%;
+}
+.period-btn{
+    list-style: none;
+    margin-top: 30px;
+}
+.dashboard-group{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 6%;
+    align-items: baseline;
+}
+.btn{
+    outline: 0;
+    border: 1px solid rgba(12, 12, 12, 0.158) !important;
+    padding: 9px 18px;
+    font-size: 13px !important;
+    border-radius: 30px;
+    margin: 0px 8px;
+    text-transform: uppercase;
+}
+.btn:focus{
+    background-color: #28AC47;
+    border: 1px solid #28AC47 !important;
+    color: #fff;
+    box-shadow: none;
+}
+.btn:hover{
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
+}
+h4{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 15px;
+    font-weight: 700;
+}
+.define-color{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.btn-color{
+    margin: 0px 5px;
+    padding: 5px 9px;
+    border-radius: 5px;
+}
+.btn-color.finish{
+    border: green 1px solid;
+    color:green;
+    background-color: rgb(190, 229, 190);
+}
+.btn-color.unfinish{
+    border: red 1px solid;
+    color:red;
+    background-color: rgb(243, 193, 193);
+}
+.btn-color.progres{
+    border: rgb(168, 168, 55) 1px solid;
+    color:rgb(168, 168, 55);
+    background-color: rgb(236, 236, 149);
+}
+
+.map{
+    height: 500px;
+    width: 100%;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 20px;
+    margin-top: 16px;
+    box-shadow: 0 0 8px -4px rgba(0,0, 0, 0.5);
+}
+.map .leaflet-container{
+    height: 100%;
+    color: rgba(125, 236, 199, 0.404);
+}

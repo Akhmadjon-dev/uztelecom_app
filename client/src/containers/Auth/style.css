@@ -1,0 +1,43 @@
+.inputGroup{
+    margin-top: 15px;
+    text-align: left;
+}
+.btn, p{
+    text-align: center;
+    font-size: 13px;
+}
+#sign-in{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+}
+#h2{
+    margin-bottom: 40px;
+}
+#link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    margin-top: 10px;
+}
+#link input{
+    margin-right: 5px;
+}
+#signUp{
+    margin-left: 5px;
+}
+
+#sign-up{
+    font-family: Montserrat;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.leftSide{
+    padding-top: 80px;
+}
+
+option[selected="selected"]{
+    font-size: 13px !important;
+}
