@@ -36,27 +36,18 @@ let myIconBlue = L.icon({
   iconSize: [38, 85],
   iconAnchor: [22, 94],
   popupAnchor: [-3, -76],
-  // shadowUrl: 'my-icon-shadow.png',
-  // shadowSize: [68, 95],
-  // shadowAnchor: [22, 94]
 });
 let myIconRed = L.icon({
   iconUrl: RedPin,
   iconSize: [38, 85],
   iconAnchor: [22, 94],
   popupAnchor: [-3, -76],
-  // shadowUrl: 'my-icon-shadow.png',
-  // shadowSize: [68, 95],
-  // shadowAnchor: [22, 94]
 });
 let myIconYellow = L.icon({
   iconUrl: YellowPin,
   iconSize: [38, 85],
   iconAnchor: [22, 94],
   popupAnchor: [-3, -76],
-  // shadowUrl: 'my-icon-shadow.png',
-  // shadowSize: [68, 95],
-  // shadowAnchor: [22, 94]
 });
 
 export default class Dashboard extends Component {
@@ -287,7 +278,7 @@ export default class Dashboard extends Component {
                 <Line type="monotone" dataKey="progress" stroke="#FF9600" />
               </LineChart>
               <div className="map">
-                <Map center={center} zoom={zoom}>
+                <Map center={center} zoom={zoom} dragging={true}>
                   <TileLayer
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     setParams={true}
@@ -299,7 +290,6 @@ export default class Dashboard extends Component {
                       <Marker
                         width={200}
                         position={[item.center.lat, item.center.lng]}
-                        draggable="true"
                         icon={myIconBlue}
                         key={item.name}
                       >
@@ -313,7 +303,6 @@ export default class Dashboard extends Component {
                       <Marker
                         width={200}
                         position={[item.center.lat, item.center.lng]}
-                        draggable="true"
                         icon={myIconRed}
                         key={item.name}
                       >
@@ -327,7 +316,6 @@ export default class Dashboard extends Component {
                       <Marker
                         width={200}
                         position={[item.center.lat, item.center.lng]}
-                        draggable="true"
                         icon={myIconYellow}
                         key={item.name}
                       >

@@ -9,7 +9,7 @@ const MongoStore = require("connect-mongo")(session);
 const compression = require("compression");
 const isLoggedIn = require("./utils/index").authHandler;
 
-const port = process.env.PORT || 8888;
+const port = process.env.PORT || 8800;
 
 const database = "mongodb://localhost/pos";
 
